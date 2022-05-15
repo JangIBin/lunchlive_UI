@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>포트폴리오</title>
+    
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/map_con.js"></script>
+    <script src="/js/gameSlide.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    
+    <div id="wrap">
+        <header class="header">
+            <label onclick="fnMove('1')">Logo</label>
+            <div class="right-items">
+                <button class="header_btn" onclick="fnMove('1')" >11111</button>
+                <button class="header_btn" onclick="fnMove('2')" >22222</button>
+                <button class="header_btn" onclick="fnMove('3')" >33333</button>
+                <button class="header_btn" onclick="fnMove('4')" >44444</button>
+                <button class="header_btn" onclick="fnMove('5')" >55555</button>
+            </div>
+        </header>
+        <!-- main 페이지 -->
+        <div id="div1" class="contents">
+            <div class="back"></div>
+            <img src="/image/sky.jpg">
+        </div>
+
+        <!-- Map, MapRoadView 페이지 -->
+        <div id="div2"  class="contents">
+            <div class="map_wrap">
+                <div id="map1">1</div>
+                <div id="map2">2</div>
+            </div>
+            <div>
+                <button onclick="halfSize()" >RoadView 보기</button>
+                <button onclick="defaultSize()" >RoadView 닫기</button>
+            </div>
+        </div>
+
+        <!-- 임시 MapRoadView 페이지 -->
+        <div id="div3"  class="contents">MapView</div>
+
+        <!-- 게임 페이지 -->
+        <div id="div4"  class="contents">
+            <ul class="slides">
+                <input type="radio" name="radio-btn" id="img-1" checked />
+                <li class="slide-container">
+                <div class="slide">
+                  <img src="/image/slide01.jpg" />
+                    </div>
+                <div class="nav">
+                  <label for="img-3" class="prev">&#x2039;</label>
+                  <label for="img-2" class="next">&#x203a;</label>
+                </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-2" />
+                <li class="slide-container">
+                    <div class="slide">
+                      <img src="/image/slide02.jpg" />
+                    </div>
+                <div class="nav">
+                  <label for="img-1" class="prev">&#x2039;</label>
+                  <label for="img-3" class="next">&#x203a;</label>
+                </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-3" />
+                <li class="slide-container">
+                    <div class="slide">
+                      <img src="/image/slide03.jpg" />
+                    </div>
+                <div class="nav">
+                  <label for="img-2" class="prev">&#x2039;</label>
+                  <label for="img-1" class="next">&#x203a;</label>
+                </div>
+                </li>
+            
+                <li class="nav-dots">
+                  <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                  <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                  <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                </li>
+            </ul>
+        </div>
+        <div id="div5"  class="contents">Comunity</div>
+    </div>
+</body>
+
+<script>
+
+</script>
+</html>
